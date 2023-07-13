@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  main {
+    @apply min-h-screen bg-zinc-600 flex flex-col items-center justify-center text-white px-5 py-20 select-none 
+  }
+  
+}
