@@ -17,7 +17,7 @@ const App = () => {
   const days = [
     {
       days: "Sunday",
-      workout: ["Rest"],
+      workout: ["Rest", '"or"', "Cardio " ],
     },
     {
       days: "Monday",
@@ -41,7 +41,7 @@ const App = () => {
     },
     {
       days: "Saturday",
-      workout: ["Biceps", "Triceps"],
+      workout: ["Biceps", "Triceps", "Forearm"],
     },
   ];
   return (
