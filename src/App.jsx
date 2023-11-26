@@ -71,7 +71,7 @@ const App = () => {
             );
           })}
         </div>
-        <p className="text-red-600 font-bold">*** Cardio &gt; 90 hrs / Week ***</p>
+        <p className="text-red-600 font-bold">*** Cardio &gt; 90 min / Week ***</p>
       </main>
     </>
   );
