@@ -11,5 +11,11 @@
   main {
     @apply min-h-screen bg-zinc-600 flex flex-col items-center justify-center text-white px-5 py-20 select-none 
   }
-  
+  @font-face {
+    font-family: offBit;
+    src: url(/font/OffBitTrial-DotBold.ttf);
+  }
+  .head-font {
+    font-family: offBit;
+  }
 }
