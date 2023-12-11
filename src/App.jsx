@@ -83,14 +83,22 @@ const App = () => {
       : true
   );
 
+  const [darkMode, setDarkMode] = useState(
+    localStorage.getItem("setSet")
+      ? JSON.parse(localStorage.getItem("setSet"))
+      : true
+  );
+
   // Your function to update setSet
   const updateSetSet = (newValue) => {
     setSetSet(newValue);
+    setDarkMode(newValue);
   };
 
   // Save setSet to localStorage whenever it changes
   useEffect(() => {
     localStorage.setItem("setSet", JSON.stringify(setSet));
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
   }, [setSet]);
 
   // Your logic to switch between set1 and set2 based on setSet
@@ -98,53 +106,59 @@ const App = () => {
 
   return (
     <>
-      <main>
-        <h1 className="text-4xl md:text-5xl font-bold text-center head-font">
-          This is the workout split
-        </h1>
-        <div className="w-full flex items-center justify-center text-black space-x-3 pt-8">
-          <button
-            onClick={() => updateSetSet(true)}
-            className={`bg-white border-2 border-black text-center px-2 py-1 rounded-md ${
-              setSet ? "bg-yellow-500" : "opacity-40"
-            }`}
-          >
-            Set1
-          </button>
-          <button
-            onClick={() => updateSetSet(false)}
-            className={`bg-white border-2 border-black text-center px-2 py-1 rounded-md ${
-              !setSet ? "bg-yellow-500" : "opacity-40"
-            }`}
-          >
-            Set2
-          </button>
-        </div>
-        <div className="flex flex-wrap flex-row gap-5 py-16 items-center justify-center">
-          {days.map((item, i) => {
-            return (
-              <div
-                className={`text-black md:aspect-square h-full w-36 sm:w-48 sm:h-48 py-5 sm:p-5 rounded-md border-2 border-black duration-150	ease-out ${
-                  todayName === item.days
-                    ? "scale-110 z-50 hover:scale-125 bg-yellow-500"
-                    : "backdrop-contrast-0 opacity-30 hover:scale-105 hover:opacity-90 bg-white "
-                }`}
-                key={i}
-              >
-                <h1 className="text-center text-xl font-bold">{item.days}</h1>
-                <ul className="text-center m-2 sm:m-5">
-                  {item.workout.map((workoutItem, i) => {
-                    return <li className="font-medium text-sm sm:text-base break-words">{workoutItem}</li>;
-                  })}
-                </ul>
-              </div>
-            );
-          })}
-        </div>
-        <p className="text-red-600 font-bold">
-          *** Cardio &gt; 90 min / Week ***
-        </p>
-      </main>
+      <div className={`${darkMode ? "" : "dark"}`}>
+        <main className="bg-zinc-600 bg-cover	 dark:bg-[url('/sun-tornado.svg')]">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-center head-font dark:text-[#ff0000]">
+            This is the workout split
+          </h1>
+          <div className="w-full flex items-center justify-center text-black space-x-3 pt-8">
+            <button
+              onClick={() => updateSetSet(true)}
+              className={`bg-white border-2 border-black text-center px-2 py-1 rounded-md font-bold ${
+                setSet ? "bg-yellow-500" : "opacity-40"
+              }`}
+            >
+              Set1
+            </button>
+            <button
+              onClick={() => updateSetSet(false)}
+              className={`bg-white border-2 border-black text-center px-2 py-1 rounded-md font-bold ${
+                !setSet ? "bg-red-700 text-white" : "opacity-40"
+              }`}
+            >
+              Set2
+            </button>
+          </div>
+          <div className="flex flex-wrap flex-row gap-5 py-16 items-center justify-center">
+            {days.map((item, i) => {
+              return (
+                <div
+                  className={`text-black md:aspect-square h-full w-36 sm:w-48 sm:h-48 py-5 sm:p-5 rounded-md border-2 border-black duration-150	ease-out ${
+                    todayName === item.days
+                      ? "scale-110 z-50 hover:scale-125 bg-yellow-500 dark:bg-red-700 dark:text-white"
+                      : "backdrop-contrast-0 opacity-30 hover:scale-105 hover:opacity-90 bg-white "
+                  }`}
+                  key={i}
+                >
+                  <h1 className="text-center text-xl font-bold">{item.days}</h1>
+                  <ul className="text-center m-2 sm:m-5">
+                    {item.workout.map((workoutItem, i) => {
+                      return (
+                        <li className="font-medium text-sm sm:text-base break-words">
+                          {workoutItem}
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              );
+            })}
+          </div>
+          <p className="text-red-600 font-bold">
+            *** Cardio &gt; 90 min / Week ***
+          </p>
+        </main>
+      </div>
     </>
   );
 };

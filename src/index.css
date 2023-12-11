@@ -9,7 +9,7 @@
     box-sizing: border-box;
   }
   main {
-    @apply min-h-screen bg-zinc-600 flex flex-col items-center justify-center text-white px-5 py-20 select-none 
+    @apply min-h-screen  flex flex-col items-center justify-center text-white px-5 py-20 select-none 
   }
   @font-face {
     font-family: offBit;
