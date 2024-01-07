@@ -158,9 +158,10 @@ const App = () => {
               );
             })}
           </div>
-          <p className="text-red-600 font-bold">
-            *** Cardio &gt; 90 min / Week ***
-          </p>
+          <span className="text-yellow-500 dark:text-red-600 font-bold items-center flex flex-col">
+            <p className="hidden dark:block">*** 3xFailiure ***</p>
+            <p>*** Cardio &gt; 90 min / Week ***</p>
+          </span>
         </main>
       </div>
     </>
