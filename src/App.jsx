@@ -45,10 +45,41 @@ const App = () => {
     },
   ];
 
+  // const set2 = [
+  //   {
+  //     days: "Sunday",
+  //     workout: ["Quads", "Hamstring", "Calves"],
+  //   },
+  //   {
+  //     days: "Monday",
+  //     workout: ["Rest"],
+  //   },
+  //   {
+  //     days: "Tuesday",
+  //     workout: ["Chest", "Triceps", "Shoulder (Front,Mid)"],
+  //   },
+  //   {
+  //     days: "Wednesday",
+  //     workout: ["Back", "Biceps", "Shoulder (Back)"],
+  //   },
+  //   {
+  //     days: "Thursday",
+  //     workout: ["Quads", "Hamstring", "Calves"],
+  //   },
+  //   {
+  //     days: "Friday",
+  //     workout: ["Chest", "Triceps", "Shoulder (Front,Mid)"],
+  //   },
+  //   {
+  //     days: "Saturday",
+  //     workout: ["Back", "Biceps", "Shoulder (Back)"],
+  //   },
+  // ];
+  
   const set2 = [
     {
       days: "Sunday",
-      workout: ["Quads", "Hamstring", "Calves"],
+      workout: ["Back", "Rear Delt", "Triceps"],
     },
     {
       days: "Monday",
@@ -56,11 +87,11 @@ const App = () => {
     },
     {
       days: "Tuesday",
-      workout: ["Chest", "Triceps", "Shoulder (Front,Mid)"],
+      workout: ["Chest", "Front Delt", "Middle Delt", "Biceps"],
     },
     {
       days: "Wednesday",
-      workout: ["Back", "Biceps", "Shoulder (Back)"],
+      workout: ["Back", "Rear Delt", "Triceps"],
     },
     {
       days: "Thursday",
@@ -68,11 +99,11 @@ const App = () => {
     },
     {
       days: "Friday",
-      workout: ["Chest", "Triceps", "Shoulder (Front,Mid)"],
+      workout: ["Rest"],
     },
     {
       days: "Saturday",
-      workout: ["Back", "Biceps", "Shoulder (Back)"],
+      workout: ["Chest", "Front Delt", "Middle Delt", "Biceps"],
     },
   ];
 
