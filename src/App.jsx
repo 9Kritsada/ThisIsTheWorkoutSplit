@@ -75,11 +75,11 @@ const App = () => {
   //     workout: ["Back", "Biceps", "Shoulder (Back)"],
   //   },
   // ];
-  
+
   const set2 = [
     {
       days: "Sunday",
-      workout: ["Back", "Rear Delt", "Triceps"],
+      workout: ["Back", "Rear Delts", "Triceps"],
     },
     {
       days: "Monday",
@@ -87,11 +87,11 @@ const App = () => {
     },
     {
       days: "Tuesday",
-      workout: ["Chest", "Front Delt", "Lateral", "Biceps"],
+      workout: ["Chest", "Front Delts", "Lateral Delts", "Biceps"],
     },
     {
       days: "Wednesday",
-      workout: ["Back", "Rear Delt", "Triceps"],
+      workout: ["Back", "Rear Delts", "Triceps"],
     },
     {
       days: "Thursday",
@@ -103,7 +103,7 @@ const App = () => {
     },
     {
       days: "Saturday",
-      workout: ["Chest", "Front Delt", "Lateral", "Biceps"],
+      workout: ["Chest", "Front Delts", "Lateral Delts", "Biceps"],
     },
   ];
 
@@ -138,8 +138,9 @@ const App = () => {
   return (
     <>
       <div className={`${darkMode ? "" : "dark"}`}>
-        <main className="bg-zinc-600 bg-cover	 dark:bg-[url('/sun-tornado.svg')]">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-center head-font dark:text-[#ff0000]">
+        <main className="bg-zinc-600 dark:bg-black">
+          <div className="opacity-40 bg-cover dark:bg-[url('/112_ORANGE.jpg')] dark:bg-opacity-0 bg-center min-h-screen absolute inset-0"></div>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-center head-font dark:text-[#ff0000] z-10">
             This is the workout split
           </h1>
           <div className="w-full space-x-3 pt-8">
@@ -175,7 +176,9 @@ const App = () => {
                   }`}
                   key={i}
                 >
-                  <h1 className="text-center text-xl font-bold">{item.days}</h1>
+                  <h1 className="text-center text-xl font-bold">
+                    {item.days}
+                  </h1>
                   <ul className="text-center m-2 sm:m-5">
                     {item.workout.map((workoutItem, i) => {
                       return (
