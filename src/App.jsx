@@ -143,11 +143,11 @@ const App = () => {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-center head-font dark:text-[#ff0000] z-10">
             This is the workout split
           </h1>
-          <div className="w-full space-x-3 pt-8">
+          <div className="w-full space-x-3 pt-8 z-10">
             <h2 className="text-center text-white text-xl mb-2 opacity-90">
               Workout Mode
             </h2>
-            <div className="flex items-center justify-center text-black space-x-3">
+            <div className="flex items-center justify-center text-black space-x-3 ">
               <div className="text-3xl text-white flex items-center">
                 <span className="text-base opacity-80">Chilling</span>❄️
               </div>
@@ -165,7 +165,7 @@ const App = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-wrap flex-row gap-5 py-16 items-center justify-center">
+          <div className="flex flex-wrap flex-row gap-5 py-16 items-center justify-center z-10">
             {days.map((item, i) => {
               return (
                 <div
@@ -192,7 +192,7 @@ const App = () => {
               );
             })}
           </div>
-          <span className="text-yellow-500 dark:text-red-600 font-bold items-center flex flex-col">
+          <span className="text-yellow-500 dark:text-red-600 font-bold items-center flex flex-col z-10">
             <p className="hidden dark:block">*** 3xFailiure ***</p>
             <p>*** Cardio &gt; 90 min / Week ***</p>
           </span>
