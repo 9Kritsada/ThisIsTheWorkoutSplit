@@ -87,7 +87,7 @@ const App = () => {
     },
     {
       days: "Tuesday",
-      workout: ["Chest", "Front Delt", "Middle Delt", "Biceps"],
+      workout: ["Chest", "Front Delt", "Lateral", "Biceps"],
     },
     {
       days: "Wednesday",
@@ -103,7 +103,7 @@ const App = () => {
     },
     {
       days: "Saturday",
-      workout: ["Chest", "Front Delt", "Middle Delt", "Biceps"],
+      workout: ["Chest", "Front Delt", "Lateral", "Biceps"],
     },
   ];
 
