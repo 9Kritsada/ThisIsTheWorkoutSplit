@@ -139,7 +139,7 @@ const App = () => {
     <>
       <div className={`${darkMode ? "" : "dark"}`}>
         <main className="bg-zinc-600 dark:bg-black">
-          <div className="opacity-40 bg-cover dark:bg-[url('/112_ORANGE.jpg')] dark:bg-opacity-0 bg-center min-h-screen absolute inset-0"></div>
+          <div className="opacity-30 bg-cover bg-fixed dark:bg-[url('/112_ORANGE.jpg')] dark:bg-opacity-0 bg-center min-h-screen absolute inset-0"></div>
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-center head-font dark:text-[#ff0000] z-10">
             This is the workout split
           </h1>
