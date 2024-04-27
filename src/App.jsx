@@ -166,7 +166,7 @@ const App = () => {
         <main className="bg-zinc-600 dark:bg-black">
           <img
             src="/112_ORANGE.jpg"
-            className={`${!isLoaded ? 'hidden' : 'opacity-30 fixed h-full object-cover inset-0'}`}
+            className={`${!isLoaded ? 'hidden' : 'opacity-30 fixed h-full w-full  object-center object-cover inset-0'}`}
             onLoad={handleImageLoad}
           />
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-center head-font dark:text-[#ff0000] z-10">

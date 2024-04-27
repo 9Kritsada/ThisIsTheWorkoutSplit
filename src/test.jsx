@@ -175,7 +175,7 @@ const App = () => {
             <div className="w-full space-x-3 pt-8 z-10">
               <h2 className="text-center text-white text-xl mb-2 opacity-90">
                 Workout Mode
-              </h2>
+              </h2>``
               <div className="flex items-center justify-center text-black space-x-3 ">
                 <div className="text-3xl text-white flex items-center">
                   <span className="text-base opacity-80">Chilling</span>❄️
