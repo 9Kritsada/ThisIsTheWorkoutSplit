@@ -85,6 +85,37 @@ const App = () => {
   //   },
   // ];
 
+  // const set2 = [
+  //   {
+  //     days: "Sunday",
+  //     workout: ["Back", "Rear Delts", "Triceps"],
+  //   },
+  //   {
+  //     days: "Monday",
+  //     workout: ["Rest"],
+  //   },
+  //   {
+  //     days: "Tuesday",
+  //     workout: ["Chest", "Front Delts", "Lateral Delts", "Biceps"],
+  //   },
+  //   {
+  //     days: "Wednesday",
+  //     workout: ["Back", "Rear Delts", "Triceps"],
+  //   },
+  //   {
+  //     days: "Thursday",
+  //     workout: ["Quads", "Hamstring", "Calves"],
+  //   },
+  //   {
+  //     days: "Friday",
+  //     workout: ["Rest"],
+  //   },
+  //   {
+  //     days: "Saturday",
+  //     workout: ["Chest", "Front Delts", "Lateral Delts", "Biceps"],
+  //   },
+  // ];
+
   const set2 = [
     {
       days: "Sunday",
@@ -92,19 +123,19 @@ const App = () => {
     },
     {
       days: "Monday",
-      workout: ["Rest"],
+      workout: ["Quads", "Hamstring", "Calves"],
     },
     {
       days: "Tuesday",
-      workout: ["Chest", "Front Delts", "Lateral Delts", "Biceps"],
+      workout: ["Rest"],
     },
     {
       days: "Wednesday",
-      workout: ["Back", "Rear Delts", "Triceps"],
+      workout: ["Chest", "Front Delts", "Lateral Delts", "Biceps"],
     },
     {
       days: "Thursday",
-      workout: ["Quads", "Hamstring", "Calves"],
+      workout: ["Back", "Rear Delts", "Triceps"],
     },
     {
       days: "Friday",
