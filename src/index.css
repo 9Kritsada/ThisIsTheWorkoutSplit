@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,9 +9,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
   }
   main {
-    @apply min-h-screen  flex flex-col items-center justify-center text-white px-5 py-20 relative
+    @apply min-h-screen  flex flex-col items-center justify-center text-white px-5 py-20 relative;
   }
   @font-face {
     font-family: offBit;
@@ -18,4 +21,43 @@
   .head-font {
     font-family: offBit;
   }
+}
+
+.box {
+  --border-angle: 0deg;
+  animation: border-angle-rotate 2s infinite linear;
+  border: 0.15rem solid transparent;
+  position: relative;
+}
+
+.box.a {
+  background: linear-gradient(#101010, #101010) padding-box,
+    conic-gradient(
+        from var(--border-angle),
+        oklch(100% 100% 0deg),
+        oklch(100% 100% 45deg),
+        oklch(100% 100% 90deg),
+        oklch(100% 100% 135deg),
+        oklch(100% 100% 180deg),
+        oklch(100% 100% 225deg),
+        oklch(100% 100% 270deg),
+        oklch(100% 100% 315deg),
+        oklch(100% 100% 360deg)
+      )
+      border-box;
+}
+
+@keyframes border-angle-rotate {
+  from {
+    --border-angle: 0deg;
+  }
+  to {
+    --border-angle: 360deg;
+  }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
