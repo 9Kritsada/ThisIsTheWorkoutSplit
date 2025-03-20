@@ -103,7 +103,7 @@ const App = () => {
             })}
           </div>
           <span className="text-[#ff0000] font-bold items-center z-10">
-            Made by{" "}
+            Created with ❤️ by{" "}
             <a
               href="https://krits.top/"
               target="_blank"
